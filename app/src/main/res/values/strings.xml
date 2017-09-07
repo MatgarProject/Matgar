@@ -15,6 +15,9 @@
     <string name="email">Email Id</string>
     <string name="passowrd">Password</string>
     <string name="login">LOGIN</string>
+    <string name="face">Log in whit Facebook</string>
+    <string name="gmail">Log in whit Gmail</string>
+
     <string name="show_pwd">Show Password</string>
     <string name="hide_pwd">Hide Password</string>
     <string name="forgot">Forgot password?</string>
@@ -30,5 +33,6 @@
     <string name="registered_emailid">Please enter your Registered Email Id below:</string>
     <string name="submit">SUBMIT</string>
     <string name="back">BACK</string>
+    <string name="or">OR</string>
 
 </resources>

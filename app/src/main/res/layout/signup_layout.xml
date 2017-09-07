@@ -21,7 +21,6 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:background="@android:color/transparent"
         android:drawableLeft="@drawable/user"
         android:drawablePadding="8dp"
         android:gravity="center_vertical"
@@ -34,17 +33,11 @@
         tools:ignore="RtlHardcoded"
         android:maxLines="1" />
 
-    <View
-        android:layout_width="fill_parent"
-        android:layout_height="1px"
-        android:background="@color/white_greyish" />
-
     <EditText
         android:id="@+id/userEmailId"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:background="@android:color/transparent"
         android:drawableLeft="@drawable/email"
         android:drawablePadding="8dp"
         android:gravity="center_vertical"
@@ -57,17 +50,11 @@
         android:textSize="16sp"
         tools:ignore="Deprecated,RtlHardcoded" />
 
-    <View
-        android:layout_width="fill_parent"
-        android:layout_height="1px"
-        android:background="@color/white_greyish" />
-
     <EditText
         android:id="@+id/mobileNumber"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:background="@android:color/transparent"
         android:drawableLeft="@drawable/phone"
         android:drawablePadding="8dp"
         android:gravity="center_vertical"
@@ -80,17 +67,11 @@
         android:textSize="16sp"
         tools:ignore="Deprecated,RtlHardcoded" />
 
-    <View
-        android:layout_width="fill_parent"
-        android:layout_height="1px"
-        android:background="@color/white_greyish" />
-
     <EditText
         android:id="@+id/location"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:background="@android:color/transparent"
         android:drawableLeft="@drawable/location"
         android:drawablePadding="8dp"
         android:gravity="center_vertical"
@@ -103,17 +84,11 @@
         android:textSize="16sp"
         tools:ignore="Deprecated,RtlHardcoded" />
 
-    <View
-        android:layout_width="fill_parent"
-        android:layout_height="1px"
-        android:background="@color/white_greyish" />
-
     <EditText
         android:id="@+id/password"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:background="@android:color/transparent"
         android:drawableLeft="@drawable/password"
         android:drawablePadding="8dp"
         android:gravity="center_vertical"
@@ -126,17 +101,11 @@
         android:textSize="16sp"
         tools:ignore="Deprecated,RtlHardcoded" />
 
-    <View
-        android:layout_width="fill_parent"
-        android:layout_height="1px"
-        android:background="@color/white_greyish" />
-
     <EditText
         android:id="@+id/confirmPassword"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:background="@android:color/transparent"
         android:drawableLeft="@drawable/confirm_password"
         android:drawablePadding="8dp"
         android:gravity="center_vertical"

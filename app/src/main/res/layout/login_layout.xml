@@ -1,4 +1,5 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:padding="20dp" >
@@ -8,7 +9,8 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:orientation="vertical" >
+        android:orientation="vertical"
+        tools:ignore="ObsoleteLayoutParam">
 
         <TextView
             android:layout_width="fill_parent"
@@ -26,7 +28,6 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:background="@android:color/transparent"
             android:drawableLeft="@drawable/email"
             android:drawablePadding="8dp"
             android:gravity="center_vertical"
@@ -35,19 +36,16 @@
             android:padding="10dp"
             android:textColor="@color/white"
             android:textColorHint="@color/white"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            tools:ignore="Deprecated,RtlHardcoded" />
 
-        <View
-            android:layout_width="fill_parent"
-            android:layout_height="1px"
-            android:background="@color/white_greyish" />
+
 
         <EditText
             android:id="@+id/login_password"
              android:singleLine="true"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:background="@android:color/transparent"
             android:drawableLeft="@drawable/password"
             android:drawablePadding="8dp"
             android:gravity="center_vertical"
@@ -56,7 +54,8 @@
             android:padding="10dp"
             android:textColor="@color/white"
             android:textColorHint="@color/white"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            tools:ignore="Deprecated,RtlHardcoded" />
 
         <LinearLayout
             android:layout_width="fill_parent"
@@ -97,6 +96,67 @@
             android:textColor="@color/background_color"
             android:textSize="17sp"
             android:textStyle="bold" />
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    android:paddingTop="8dp"
+
+    >
+    <View
+        android:layout_width="0dp"
+        android:layout_height="2px"
+        android:layout_weight="2"
+        android:layout_marginTop="10dp"
+        android:background="@color/white_greyish" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/or"/>
+    <View
+        android:layout_width="0dp"
+        android:layout_height="2px"
+        android:layout_weight="2"
+        android:layout_marginTop="10dp"
+
+        android:background="@color/white_greyish" />
+
+
+</LinearLayout>
+
+        <Button
+            android:id="@+id/faceBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/fac"
+
+            android:background="@color/blue"
+            android:padding="3dp"
+            android:text="@string/face"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            tools:ignore="RtlHardcoded" />
+        <Button
+            android:drawableLeft="@drawable/go"
+            android:id="@+id/gmailBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+            android:background="@color/red_500"
+            android:padding="3dp"
+            android:text="@string/gmail"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            tools:ignore="RtlHardcoded" />
+
     </LinearLayout>
 
     <TextView
@@ -110,6 +170,9 @@
         android:padding="5dp"
         android:text="@string/newUser"
         android:textColor="@color/white"
-        android:textSize="15sp" />
+        android:textSize="15sp"
+        tools:ignore="ObsoleteLayoutParam" />
+
+
 
 </RelativeLayout>
