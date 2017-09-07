@@ -11,7 +11,6 @@ import android.widget.Toast;
 
 import com.example.elashry.matgar.R;
 
-
 public class Check_Internet_connection extends AppCompatActivity {
 
     private ImageButton refresh_btn;
