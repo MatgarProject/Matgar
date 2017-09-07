@@ -35,4 +35,34 @@
     <string name="back">BACK</string>
     <string name="or">OR</string>
 
+    <string name="men_fashion">MEN FASHION</string>
+    <string name="men_clothing">Men Clothing</string>
+    <string name="men_Shoes">Men Shoes</string>
+    <string name="men_accessories">Men Accessories</string>
+
+    <string name="women_fashion">Women FASHION</string>
+    <string name="women_clothing">Women Clothing</string>
+    <string name="women_Shoes">Women Shoes</string>
+    <string name="women_accessories">Women Accessories</string>
+
+    <string name="mobile_tablets">MOBILES &amp; TABLETS</string>
+    <string name="mobiles">Mobiles</string>
+    <string name="tablets_ipads">Tablets &amp; Ipads</string>
+    <string name="accessories">Accessories</string>
+
+    <string name="home_living">HOME &amp; LIVING</string>
+    <string name="home">Home</string>
+    <string name="appliances">Appliances</string>
+
+    <string name="laptop_accessories">LAPTOP &amp; ACCESSORIES</string>
+    <string name="laptops">Laptops</string>
+    <string name="networking_products">Networking Products</string>
+    <string name="power">Power</string>
+
+    <string name="accessories_peripherals">Accessories &amp; Peripherals</string>
+    <string name="hard_drives">Appliances</string>
+    <string name="printers">Printers &amp; Scanners</string>
+    <string name="spare_partes">Appliances</string>
+
+
 </resources>
