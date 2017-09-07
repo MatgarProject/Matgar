@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Matgar</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="backdrop_title">Alatheer matgar center</string>
+    <string name="backdrop_subtitle">All you want is one button </string>
+    <string name="internet">Check your Internet connection</string>
+
+</resources>
