@@ -5,6 +5,7 @@
     <color name="colorAccent">#31334A</color>
     <color name="shadowColorRadial">#555555</color>
 
+
     <color name="background_color">#813e9e</color>
     <color name="back">#042b5c</color>
     <color name="tvbg">#7e57c2</color>
@@ -54,8 +55,8 @@
     <color name="textColor">#333333</color>
     <color name="bg">#EC6C3F</color>
     <color name="content_bg">#084C61</color>
-
     <color name="white_greyish">#EEEEEE</color>
+
     <color name="button_selectorcolor">#9E9E9E</color>
     <color name="colorHighlight">#B6B6B6</color>
     <color name="background_purple">#3F2466</color>

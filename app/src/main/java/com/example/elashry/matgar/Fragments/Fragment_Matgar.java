@@ -89,7 +89,7 @@ public class Fragment_Matgar extends Fragment {
 
     }
     private void Get_matagar_pro_Data() {
-        JsonArrayRequest mJsonArrayRequest = new JsonArrayRequest("http://semicolonsoft.com/clients/emc/api/find/app_matgar",
+        JsonArrayRequest mJsonArrayRequest = new JsonArrayRequest("",
                 new Response.Listener<JSONArray>() {
                     @Override
                     public void onResponse(JSONArray response) {
