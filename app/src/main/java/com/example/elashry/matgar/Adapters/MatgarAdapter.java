@@ -58,7 +58,7 @@ public class MatgarAdapter extends RecyclerView.Adapter<MatgarAdapter.MyViewHold
             }
 
         holder.date.setText("منذ"+" "+matgarModelList.get(position).getDate().toString());
-        Picasso.with(mContext).load(""+matgarModelList.get(position).getProduct_image().toString()). fit().into(holder.pro_image);
+        Picasso.with(mContext).load("http://semicolonsoft.com/clients/emc/public/uploads/images/"+matgarModelList.get(position).getProduct_image().toString()). fit().into(holder.pro_image);
         holder.pro_image.setVisibility(View.VISIBLE);
         holder.mBar.setVisibility(View.GONE);
         holder.pro_image.setOnClickListener(new View.OnClickListener() {

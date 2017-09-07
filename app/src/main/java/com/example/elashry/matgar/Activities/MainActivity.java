@@ -27,8 +27,8 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+      //  Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+//        setSupportActionBar(toolbar);
 
 
 
@@ -71,25 +71,6 @@ public class MainActivity extends AppCompatActivity
 
 
     }
-
-    /**
-     * Adding few albums for testing
-     */
-
-
-    /**
-     * RecyclerView item decoration - give equal margin around grid item
-     */
-
-
-
-    /**
-     * Converting dp to pixel
-     */
-
-
-
-
 
     @Override
     public void onBackPressed() {
