@@ -1,4 +1,4 @@
-package com.example.elashry.eleman.Model;
+package com.example.elashry.matgar.Models;
 
 import java.io.Serializable;
 

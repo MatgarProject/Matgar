@@ -1,11 +1,7 @@
-package com.example.elashry.matgar;
+package com.example.elashry.matgar.Activities;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -17,6 +13,8 @@ import android.view.MenuItem;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
+import com.example.elashry.matgar.Fragments.Fragment_Matgar;
+import com.example.elashry.matgar.R;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -91,7 +89,7 @@ public class MainActivity extends AppCompatActivity
 
 
 
-  
+
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

@@ -1,4 +1,4 @@
-package com.example.elashry.eleman.Fragment;
+package com.example.elashry.matgar.Fragments;
 
 import android.content.Context;
 import android.content.Intent;
@@ -14,29 +14,17 @@ import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.JsonArrayRequest;
-import com.example.elashry.eleman.Activities.Check_Internet_connection;
-import com.example.elashry.eleman.Adapter.MatgarAdapter;
-import com.example.elashry.eleman.App_URL;
-import com.example.elashry.eleman.Controller;
-import com.example.elashry.eleman.Model.MatgarModel;
-import com.example.elashry.eleman.R;
+;
+import com.example.elashry.matgar.Activities.Check_Internet_connection;
+import com.example.elashry.matgar.Models.MatgarModel;
+import com.example.elashry.matgar.R;
 
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.util.ArrayList;
 import java.util.List;
-
 
 
 public class Fragment_Matgar extends Fragment {
@@ -90,7 +78,7 @@ public class Fragment_Matgar extends Fragment {
 
     }
     private void Get_matagar_pro_Data() {
-        JsonArrayRequest mJsonArrayRequest = new JsonArrayRequest(App_URL.app_matgar,
+       /* JsonArrayRequest mJsonArrayRequest = new JsonArrayRequest(App_URL.app_matgar,
                 new Response.Listener<JSONArray>() {
                     @Override
                     public void onResponse(JSONArray response) {
@@ -133,7 +121,7 @@ public class Fragment_Matgar extends Fragment {
                     }
                 }
         );
-        Controller.getInstance().addToRequestQueue(mJsonArrayRequest,"json array req");
+        Controller.getInstance().addToRequestQueue(mJsonArrayRequest,"json array req");*/
     }
 
     public class GridSpacingItemDecoration extends RecyclerView.ItemDecoration {

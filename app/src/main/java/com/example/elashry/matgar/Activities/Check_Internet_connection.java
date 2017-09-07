@@ -1,4 +1,4 @@
-package com.example.elashry.eleman.Activities;
+package com.example.elashry.matgar.Activities;
 
 import android.content.Context;
 import android.content.Intent;
@@ -9,7 +9,8 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
-import com.example.elashry.eleman.R;
+import com.example.elashry.matgar.R;
+
 
 public class Check_Internet_connection extends AppCompatActivity {
 
@@ -53,21 +54,21 @@ public class Check_Internet_connection extends AppCompatActivity {
         else {
             if (flag.toString().equals("1"))
             {
-                startActivity(new Intent(Check_Internet_connection.this,ItemCategory.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+               // startActivity(new Intent(Check_Internet_connection.this,ItemCategory.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
 
             }
             else if (flag.toString().equals("2"))
             {
-                startActivity(new Intent(Check_Internet_connection.this,Manager.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+             //   startActivity(new Intent(Check_Internet_connection.this,Manager.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
 
             }
             else if (flag.toString().equals("3"))
             {
-                startActivity(new Intent(Check_Internet_connection.this,Matgar.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+               // startActivity(new Intent(Check_Internet_connection.this,Matgar.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
 
             } else if (flag.toString().equals("4"))
             {
-                startActivity(new Intent(Check_Internet_connection.this,ADS.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+              //  startActivity(new Intent(Check_Internet_connection.this,ADS.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
 
             }
         }
@@ -76,6 +77,6 @@ public class Check_Internet_connection extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        startActivity(new Intent(Check_Internet_connection.this,Category.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+        startActivity(new Intent(Check_Internet_connection.this,MainActivity.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
     }
 }

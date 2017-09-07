@@ -8,5 +8,6 @@
     <string name="backdrop_title">Alatheer matgar center</string>
     <string name="backdrop_subtitle">All you want is one button </string>
     <string name="internet">Check your Internet connection</string>
-
+    <string name="register">register</string>
+    <string name="detail">details</string>
 </resources>
