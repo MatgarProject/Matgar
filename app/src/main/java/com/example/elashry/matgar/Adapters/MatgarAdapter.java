@@ -30,13 +30,10 @@ public class MatgarAdapter extends RecyclerView.Adapter<MatgarAdapter.MyViewHold
     private LayoutInflater inflater;
 
 
-
-
     public MatgarAdapter(Context mContext, List<MatgarModel> matgarModelList) {
         this.mContext = mContext;
         this.matgarModelList = matgarModelList;
         inflater =LayoutInflater.from(mContext);
-
     }
 
     @Override
@@ -71,7 +68,7 @@ public class MatgarAdapter extends RecyclerView.Adapter<MatgarAdapter.MyViewHold
               //  mContext.startActivity(intent);
             }
         });
-       // new asyn_task(holder).execute(matgarModelList.get(position).getProduct_image().toString());
+      //  new asyn_task(holder).execute(matgarModelList.get(position).getProduct_image().toString());
         holder.overflow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

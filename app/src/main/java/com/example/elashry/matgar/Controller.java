@@ -1,6 +1,5 @@
 package com.example.elashry.matgar;
 
-
 import android.app.Application;
 import android.text.TextUtils;
 

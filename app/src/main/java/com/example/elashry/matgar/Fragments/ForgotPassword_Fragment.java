@@ -1,4 +1,4 @@
-package com.example.elashry.matgar.Activities;
+package com.example.elashry.matgar.Fragments;
 
 import android.content.res.ColorStateList;
 import android.content.res.XmlResourceParser;
@@ -12,6 +12,9 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.elashry.matgar.Activities.CustomToast;
+import com.example.elashry.matgar.Activities.Login;
+import com.example.elashry.matgar.Utils;
 import com.example.elashry.matgar.R;
 
 import java.util.regex.Matcher;

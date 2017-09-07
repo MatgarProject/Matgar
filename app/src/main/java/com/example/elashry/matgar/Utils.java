@@ -1,4 +1,4 @@
-package com.example.elashry.matgar.Activities;
+package com.example.elashry.matgar;
 
 public class Utils {
 	

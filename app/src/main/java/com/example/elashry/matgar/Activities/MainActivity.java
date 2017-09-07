@@ -62,10 +62,7 @@ public class MainActivity extends AppCompatActivity
 
     }
 
-    /**
-     * Initializing collapsing toolbar
-     * Will show and hide the toolbar title on scroll
-     */
+
     private void initCollapsingToolbar() {
 
 

@@ -8,7 +8,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.View.OnClickListener;
 
+import com.example.elashry.matgar.Fragments.Login_Fragment;
 import com.example.elashry.matgar.R;
+import com.example.elashry.matgar.Utils;
 
 public class Login extends AppCompatActivity {
     private static FragmentManager fragmentManager;
@@ -41,7 +43,7 @@ public class Login extends AppCompatActivity {
     }
 
     // Replace Login Fragment with animation
-    protected void replaceLoginFragment() {
+    public void replaceLoginFragment() {
         fragmentManager
                 .beginTransaction()
                 .setCustomAnimations(R.anim.left_enter, R.anim.right_out)

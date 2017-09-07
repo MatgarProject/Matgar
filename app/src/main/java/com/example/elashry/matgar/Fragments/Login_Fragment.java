@@ -1,5 +1,7 @@
-package com.example.elashry.matgar.Activities;
+package com.example.elashry.matgar.Fragments;
 
+import android.content.Context;
+import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.content.res.XmlResourceParser;
 import android.os.Bundle;
@@ -24,6 +26,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
+import com.example.elashry.matgar.Activities.CustomToast;
+import com.example.elashry.matgar.Activities.MainActivity;
+import com.example.elashry.matgar.Utils;
 import com.example.elashry.matgar.R;
 
 import java.util.regex.Matcher;
@@ -179,6 +184,8 @@ public class Login_Fragment extends Fragment implements OnClickListener {
 					"Your Email Id is Invalid.");
 		// Else do login and do your stuff
 		else
+			 startActivity(new Intent(getContext(),MainActivity.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+
 			Toast.makeText(getActivity(), "Do Login.", Toast.LENGTH_SHORT)
 					.show();
 
