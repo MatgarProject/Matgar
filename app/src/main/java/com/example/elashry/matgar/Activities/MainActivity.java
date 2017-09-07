@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity
     private CollapsingToolbarLayout collapseToolBar;
     private final String matgar_url ="";
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
