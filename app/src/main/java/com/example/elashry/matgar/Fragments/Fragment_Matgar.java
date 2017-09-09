@@ -68,7 +68,7 @@ public class Fragment_Matgar extends Fragment {
 
     private void init_View(View view) {
         mContext          =view.getContext();
-        collapsingToolbar = (CollapsingToolbarLayout) view.findViewById(R.id.collapsing_toolbar);
+       // collapsingToolbar = (CollapsingToolbarLayout) view.findViewById(R.id.collapsing_toolbar);
         recyclerView        = (RecyclerView) view.findViewById(R.id.recycler_view);
         mSwipeRefreshLayout = (SwipeRefreshLayout) view.findViewById(R.id.matgar_swapRefresh);
         mSwipeRefreshLayout.setColorSchemeColors(ContextCompat.getColor(mContext,R.color.colorPrimary));

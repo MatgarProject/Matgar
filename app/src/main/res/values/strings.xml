@@ -63,6 +63,10 @@
     <string name="hard_drives">Appliances</string>
     <string name="printers">Printers &amp; Scanners</string>
     <string name="spare_partes">Appliances</string>
+    <string name="my_orders">My Orders</string>
+    <string name="sign_in">Sign In</string>
+    <string name="Recent">Recent Searches</string>
+    <string name="Recently" >Recently Viewed</string>
 
 
 </resources>

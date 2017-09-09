@@ -1,9 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:All4One="http://schemas.android.com/apk/res-auto">
+
     <item
-        android:id="@+id/action_settings"
-        android:orderInCategory="100"
-        android:title="@string/action_settings"
-        app:showAsAction="never" />
+        android:id="@+id/search"
+        android:icon="@mipmap/search"
+        android:title="search"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="ifRoom|collapseActionView"/>
+    <item
+        android:id="@+id/person"
+        android:icon="@mipmap/person"
+        android:title="person"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/menu_overflow"
+        android:icon="@mipmap/more"
+        All4One:showAsAction="always"
+        android:title="men">
+        <menu>
+
+
+            <item
+                android:id="@+id/sign_in"
+                android:orderInCategory="100"
+                android:title="@string/sign_in"
+                android:icon="@mipmap/lock"/>
+
+/>
+
+            <item
+                android:id="@+id/Recent"
+                android:orderInCategory="100"
+                android:title="@string/Recent"
+                android:icon="@mipmap/hour"
+ />
+            <item
+                android:id="@+id/Recently"
+                android:orderInCategory="100"
+                android:title="@string/Recently"
+                android:icon="@mipmap/view"/>
+
+            <item
+                android:id="@+id/my_orders"
+                android:orderInCategory="100"
+                android:title="@string/my_orders"
+                android:icon="@mipmap/order"
+ />
+        </menu>
+    </item>
+
+
+
+
+
+
+
+
+
+
 </menu>
