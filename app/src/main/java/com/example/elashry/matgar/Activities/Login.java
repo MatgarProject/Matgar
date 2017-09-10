@@ -1,12 +1,18 @@
 package com.example.elashry.matgar.Activities;
 
 
+import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
+import android.text.SpannableString;
+import android.text.style.StyleSpan;
+import android.text.style.UnderlineSpan;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.TextView;
 
 import com.example.elashry.matgar.Fragments.Login_Fragment;
 import com.example.elashry.matgar.R;
@@ -20,6 +26,15 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         fragmentManager = getSupportFragmentManager();
+
+
+        String tempString = "Skip";
+        TextView text = (TextView) findViewById(R.id.skip);
+        SpannableString spanString = new SpannableString(tempString);
+        spanString.setSpan(new UnderlineSpan(), 0, spanString.length(), 0);
+        spanString.setSpan(new StyleSpan(Typeface.ITALIC), 0, spanString.length(), 0);
+        text.setText(spanString);
+
 
         // If savedinstnacestate is null then replace login fragment
         if (savedInstanceState == null) {
@@ -39,6 +54,20 @@ public class Login extends AppCompatActivity {
 
                     }
                 });
+
+        findViewById(R.id.skip).setOnClickListener(
+                new OnClickListener() {
+
+                    @Override
+                    public void onClick(View arg0) {
+                        Intent i = new Intent(Login.this,MainActivity.class);
+                        startActivity(i);
+
+
+                    }
+                });
+
+
 
     }
 

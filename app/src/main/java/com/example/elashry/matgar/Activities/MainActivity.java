@@ -1,6 +1,7 @@
 package com.example.elashry.matgar.Activities;
 
 import android.app.SearchManager;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.NavigationView;
@@ -111,6 +112,10 @@ inial();
         //noinspection SimplifiableIfStatement
         if (id == R.id.search) {
             return true;
+        }
+        else if(id == R.id.person){
+            Intent i = new Intent(MainActivity.this,AddAda.class);
+            startActivity(i);
         }
 
         return super.onOptionsItemSelected(item);

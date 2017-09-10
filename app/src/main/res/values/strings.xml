@@ -66,7 +66,19 @@
     <string name="my_orders">My Orders</string>
     <string name="sign_in">Sign In</string>
     <string name="Recent">Recent Searches</string>
-    <string name="Recently" >Recently Viewed</string>
+    <string name="Recently">Recently Viewed</string>
+    <string name="addphoto">Add Photo</string>
+    <string name="whatAd">ما الذي تود الاعلان عنه</string>
+    <string name="title">عنوان الاعلان</string>
+    <string name="phone">رقم الموبيل</string>
+    <string name="detailad">نص العنوان ( اضف تفاصيل اكثر )</string>
+    <string name="save">حفظ ونشر الاعلان</string>
+
+
+    <string-array name="all_arrays">
+        <item>men</item>
+        <item>Women</item>
+    </string-array>
 
 
 </resources>
