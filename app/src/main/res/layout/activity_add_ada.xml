@@ -15,7 +15,6 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:background="@color/white"
-        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         >
 
@@ -25,42 +24,40 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:gravity="right">
-
+            >
 
 
             <Button
                 android:id="@+id/b1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="2dp"
-                android:layout_marginTop="6dp"
-                android:layout_gravity="right"
-                android:paddingTop="5dp"
-                android:paddingBottom="5dp"
+                android:layout_margin="6dp"
+                android:background="@drawable/button"
+                android:drawableTop="@mipmap/cam"
                 android:text="@string/addphoto"
                 android:textColor="@color/white"
-                android:drawableTop="@mipmap/cam"
-                android:textSize="20dp"
-                android:background="@color/colorPrimary"
-                android:textStyle="bold" />
+                android:paddingBottom="2dp"
+                android:textSize="12dp"
+                 />
 
 
-    <!--<ImageView
-        android:id="@+id/img"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />-->
+            <!--<ImageView
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />-->
 
             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal" >
 
-                <ListView
-                    android:id="@+id/list"
-                    android:layout_height="wrap_content"
-                    android:layout_width="match_parent">
-                </ListView>
+
+                <ImageView  android:id="@+id/img"
+                    android:layout_height="100dp"
+                    android:layout_width="100dp"/>
+                <ImageView  android:id="@+id/img1"
+                    android:layout_height="100dp"
+                    android:layout_width="100dp"/>
 
             </LinearLayout>
         </LinearLayout>
@@ -87,13 +84,12 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
                     android:orientation="vertical"
                     android:paddingBottom="10dp"
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp"
-                    android:paddingTop="5dp"
-                    android:background="@color/colorPrimary"
-                    >
+                    android:paddingTop="5dp">
 
 
                     <Button
@@ -102,22 +98,25 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="10dp"
                         android:background="@drawable/text"
-                        android:drawableLeft="@mipmap/etgah"
+                        android:drawableLeft="@mipmap/etegah"
                         android:text="@string/whatAd"
-                        android:textColor="@color/colorPrimary" />
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20dp" />
 
                     <EditText
-                        android:id="@+id/cphone"
+                        android:id="@+id/title"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="10dp"
                         android:background="@drawable/text"
+                        android:hint="@string/title"
+                        android:inputType="textEmailAddress"
                         android:paddingBottom="5dp"
-                        android:inputType="phone"
                         android:paddingLeft="5dp"
                         android:paddingRight="5dp"
+                        android:textColor="@color/colorPrimary"
+
                         android:paddingTop="5dp"
-                        android:hint="@string/title"
                         android:textColorHint="@color/colorPrimary" />
 
                     <EditText
@@ -126,38 +125,42 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="10dp"
                         android:background="@drawable/text"
+                        android:hint="@string/phone"
                         android:inputType="textEmailAddress"
                         android:paddingBottom="5dp"
                         android:paddingLeft="5dp"
                         android:paddingRight="5dp"
+                        android:textColor="@color/colorPrimary"
+
                         android:paddingTop="5dp"
-                        android:hint="@string/phone"
                         android:textColorHint="@color/colorPrimary" />
 
                     <EditText
                         android:id="@+id/cmassege"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:padding="5dp"
-                        android:minLines="3"
-                        android:textAlignment="gravity"
+                        android:background="@drawable/text"
                         android:gravity="top"
                         android:hint="@string/detailad"
-                        android:textColorHint="@color/colorPrimary"
-                        android:background="@drawable/text"/>
+                        android:minLines="3"
+                        android:padding="5dp"
+                        android:textColor="@color/colorPrimary"
 
+                        android:textAlignment="gravity"
+                        android:textColorHint="@color/colorPrimary" />
 
 
                     <Button
                         android:id="@+id/btnWithText"
                         android:layout_width="150dp"
-                        android:onClick="registerOrder"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
-                        android:textColor="@color/amber_400"
-                        android:textSize="18sp"
-                        android:text="@string/save"
                         android:layout_gravity="center"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/text"
+                        android:onClick="registerOrder"
+                        android:text="@string/save"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18sp"
 
                         />
 

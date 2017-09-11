@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray_light"
+    tools:context="com.example.elashry.matgar.Activities.Shkawe">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_marginTop="15dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/alatheer"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="asmaa@gmail.com"
+        android:textColor="@color/blue"
+        android:layout_marginTop="20dp"
+
+        android:drawableRight="@mipmap/mail"
+        android:background="@color/white"
+        android:gravity="right|center"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="asmaa@gmail.com"
+        android:textColor="@color/blue"
+      android:layout_marginTop="1dp"
+
+        android:background="@color/white"
+        android:drawableRight="@mipmap/facebook_3"
+        android:gravity="right|center"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="او,ارسل لنا  ملاحظاتك  "
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="17dp"
+
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="الاسم"
+        android:textColorHint="@color/light_gray"
+        android:background="@color/white"
+        android:textSize="15dp"
+        android:lines="2"
+
+        android:padding="5dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:hint="البريد الالكتروني "
+        android:textColorHint="@color/light_gray"
+        android:textSize="15dp"
+        android:lines="2"
+        android:background="@color/white"
+        android:padding="5dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="رقم الموبيل"
+        android:layout_marginTop="1dp"
+        android:textColorHint="@color/light_gray"
+        android:background="@color/white"
+        android:lines="2"
+        android:textSize="15dp"
+        android:padding="5dp"/>
+
+
+
+    <EditText
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="شكر,إقتراح , شكوي , مشكله تقنيه او غير ذلك"
+        android:textColorHint="@color/light_gray"
+        android:background="@color/white"
+        android:gravity="top"
+        android:lines="2"
+        android:textSize="15dp"
+        android:padding="5dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:hint="محتوي الرساله"
+        android:gravity="top"
+        android:lines="4"
+        android:textColorHint="@color/light_gray"
+        android:textSize="15dp"
+        android:background="@color/white"
+        android:padding="5dp"/>
+
+    <Button
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="إرسل"
+        android:textSize="15dp"
+        android:background="@color/colorPrimary"/>
+
+
+</LinearLayout>
+    </ScrollView>
+</LinearLayout>

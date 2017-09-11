@@ -118,6 +118,11 @@ inial();
             startActivity(i);
         }
 
+        else if(id == R.id.call_us){
+            Intent i = new Intent(MainActivity.this,Shkawe.class);
+            startActivity(i);
+        }
+
         return super.onOptionsItemSelected(item);
     }
 

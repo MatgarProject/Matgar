@@ -1,34 +1,34 @@
 package com.example.elashry.matgar.Activities;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
-
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.ArrayList;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Build;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.ListView;
 
 import com.example.elashry.matgar.Models.RealPathUtil;
 import com.example.elashry.matgar.R;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
 
 public class AddAda extends AppCompatActivity {
     ListView listView ;
 
     Button btnSelectImage;
-    ImageView imageView;
+    ImageView imageView1,imageView2;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,7 +36,9 @@ public class AddAda extends AppCompatActivity {
 
         // get reference to views
         btnSelectImage = (Button) findViewById(R.id.b1);
-listView= (ListView) findViewById(R.id.list);
+        imageView1 = (ImageView) findViewById(R.id.img);
+        imageView2 = (ImageView) findViewById(R.id.img1);
+
         // add click listener to button
         btnSelectImage.setOnClickListener(new OnClickListener() {
             @Override
@@ -46,14 +48,14 @@ listView= (ListView) findViewById(R.id.list);
                 // 2. pick image only
                 intent.setType("image/*");
                 // 3. start activity
-                startActivityForResult(intent, 0);
+
+                intent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, true);
+                startActivityForResult(intent.createChooser(intent, "Select Picture"), 1);
 
                 // define onActivityResult to do something with picked imag
             }
         });
-
-
-  }
+    }
 
 
     @Override
@@ -92,42 +94,17 @@ listView= (ListView) findViewById(R.id.list);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-        ArrayList<Bitmap> imgs=new ArrayList<>();
-        imgs.add(bitmap);
-        imageView.setImageBitmap(bitmap);
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
-                android.R.layout.simple_list_item_2, android.R.id.text1, imgs);
+//        imageView1.setImageBitmap(bitmap);
+//        imageView2.setImageBitmap(bitmap);
 
+        imageView1.setImageURI(uriFromPath);
+        imageView2.setImageURI(uriFromPath);
 
-        // Assign adapter to ListView
-        listView.setAdapter(adapter);
-
-        // ListView Item Click Listener
-      /*  listView.setOnItemClickListener(new OnItemClickListener() {
-
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view,
-                                    int position, long id) {
-
-                // ListView Clicked item index
-                int itemPosition     = position;
-
-                // ListView Clicked item value
-                String  itemValue    = (String) listView.getItemAtPosition(position);
-
-                // Show Alert
-                Toast.makeText(getApplicationContext(),
-                        "Position :"+itemPosition+"  ListItem : " +itemValue , Toast.LENGTH_LONG)
-                        .show();
-
-            }
-
-        });*/
-    }
         Log.d("HMKCODE", "Build.VERSION.SDK_INT:"+sdk);
         Log.d("HMKCODE", "URI Path:"+uriPath);
         Log.d("HMKCODE", "Real Path: "+realPath);
     }
 
 }
+
 

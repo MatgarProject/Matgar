@@ -57,7 +57,7 @@
                 app:tabMode="fixed"
                 app:tabSelectedTextColor="@color/white"
                 app:tabTextAppearance="@android:style/TextAppearance.Medium"
-                app:tabTextColor="@color/amber_400"
+                app:tabTextColor="@color/second"
 
                 />
         </android.support.design.widget.AppBarLayout>
