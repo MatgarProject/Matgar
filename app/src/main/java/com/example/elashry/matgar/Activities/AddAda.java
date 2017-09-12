@@ -29,15 +29,14 @@ public class AddAda extends AppCompatActivity {
     Button btnSelectImage;
     ImageView imageView1,imageView2;
 
-    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_ada);
 
         // get reference to views
         btnSelectImage = (Button) findViewById(R.id.b1);
+
         imageView1 = (ImageView) findViewById(R.id.img);
-        imageView2 = (ImageView) findViewById(R.id.img1);
 
         // add click listener to button
         btnSelectImage.setOnClickListener(new OnClickListener() {
@@ -48,14 +47,14 @@ public class AddAda extends AppCompatActivity {
                 // 2. pick image only
                 intent.setType("image/*");
                 // 3. start activity
+                startActivityForResult(intent, 0);
 
-                intent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, true);
-                startActivityForResult(intent.createChooser(intent, "Select Picture"), 1);
-
-                // define onActivityResult to do something with picked imag
+                // define onActivityResult to do something with picked image
             }
         });
     }
+
+
 
 
     @Override
@@ -81,6 +80,8 @@ public class AddAda extends AppCompatActivity {
 
     private void setTextViews(int sdk, String uriPath,String realPath){
 
+
+
         Uri uriFromPath = Uri.fromFile(new File(realPath));
 
         // you have two ways to display selected image
@@ -94,11 +95,8 @@ public class AddAda extends AppCompatActivity {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-//        imageView1.setImageBitmap(bitmap);
-//        imageView2.setImageBitmap(bitmap);
-
+        //imageView1.setImageBitmap(bitmap);
         imageView1.setImageURI(uriFromPath);
-        imageView2.setImageURI(uriFromPath);
 
         Log.d("HMKCODE", "Build.VERSION.SDK_INT:"+sdk);
         Log.d("HMKCODE", "URI Path:"+uriPath);

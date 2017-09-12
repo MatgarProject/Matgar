@@ -1,16 +1,13 @@
 package com.example.elashry.matgar.Models;
 
-/**
- * Created by ok on 15/08/2017.
- */
 
-import android.annotation.SuppressLint;
-import android.content.Context;
-import android.content.CursorLoader;
-import android.database.Cursor;
-import android.net.Uri;
-import android.provider.DocumentsContract;
-import android.provider.MediaStore;
+        import android.annotation.SuppressLint;
+        import android.content.Context;
+        import android.content.CursorLoader;
+        import android.database.Cursor;
+        import android.net.Uri;
+        import android.provider.DocumentsContract;
+        import android.provider.MediaStore;
 
 public class RealPathUtil {
 
