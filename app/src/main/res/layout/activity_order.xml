@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.example.elashry.matgar.Activities.Order">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/alatheer" />
+
+    <Button
+
+        android:id="@+id/angry_btn"
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+
+        android:layout_marginRight="10dp"
+        android:background="@drawable/spanxxx"
+
+        android:drawableLeft="@mipmap/etegah"
+        android:text="اختار القسم"
+        android:textColor="#3080B5"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/angry_btn2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+
+        android:layout_marginLeft="10dp"
+
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/span"
+
+        android:drawableLeft="@mipmap/etegah"
+        android:text="اختار الفئه"
+        android:textColor="#3080B5"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/angry_btn3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+
+        android:layout_marginLeft="10dp"
+
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/spanxxx"
+
+        android:drawableLeft="@mipmap/etegah"
+        android:text=" الماركه"
+        android:textColor="#3080B5"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/angry_btn4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+
+        android:layout_marginLeft="10dp"
+
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/span"
+
+        android:drawableLeft="@mipmap/etegah"
+        android:text=" الصنف"
+        android:textColor="#3080B5"
+        android:textSize="25sp" />
+
+
+    <Button
+        android:id="@+id/angry_btn5"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+
+        android:layout_marginLeft="10dp"
+
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/spanxxx"
+
+        android:drawableLeft="@mipmap/etegah"
+        android:text=" اللون"
+        android:textColor="#3080B5"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/angry_btn6"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+
+        android:layout_marginLeft="10dp"
+
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/span"
+
+        android:drawableLeft="@mipmap/etegah"
+        android:text=" المقاس"
+        android:textColor="#3080B5"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/angry_btn7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginLeft="10dp"
+
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button"
+
+        android:drawableLeft="@mipmap/etegah"
+        android:text="ارسل"
+        android:textColor="#ffffff"
+        android:textSize="25sp" />
+
+
+</LinearLayout>

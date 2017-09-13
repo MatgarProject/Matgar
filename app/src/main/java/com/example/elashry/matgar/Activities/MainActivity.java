@@ -113,13 +113,18 @@ inial();
         if (id == R.id.search) {
             return true;
         }
-        else if(id == R.id.person){
+        else if(id == R.id.add_ads){
             Intent i = new Intent(MainActivity.this,AddAda.class);
             startActivity(i);
         }
 
         else if(id == R.id.call_us){
             Intent i = new Intent(MainActivity.this,Shkawe.class);
+            startActivity(i);
+        }
+
+        else if(id == R.id.my_orders){
+            Intent i = new Intent(MainActivity.this,Order.class);
             startActivity(i);
         }
 

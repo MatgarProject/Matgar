@@ -74,6 +74,7 @@
     <string name="detailad">نص العنوان ( اضف تفاصيل اكثر )</string>
     <string name="save">حفظ ونشر الاعلان</string>
     <string name="call">Call Us</string>
+    <string name="addADs">Add ADs</string>
 
 
     <string-array name="all_arrays">

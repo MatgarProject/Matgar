@@ -11,9 +11,9 @@
         app:actionViewClass="android.support.v7.widget.SearchView"
         app:showAsAction="ifRoom|collapseActionView"/>
     <item
-        android:id="@+id/person"
-        android:icon="@mipmap/person"
-        android:title="person"
+        android:id="@+id/filter"
+        android:icon="@drawable/ic_action_filter_tool_black_shape"
+        android:title="filter"
         app:showAsAction="ifRoom"/>
 
     <item
@@ -55,6 +55,13 @@
                 android:orderInCategory="100"
                 android:title="@string/call"
                 android:icon="@mipmap/call"
+                />
+
+            <item
+                android:id="@+id/add_ads"
+                android:orderInCategory="100"
+                android:title="@string/addADs"
+                android:icon="@mipmap/add"
                 />
         </menu>
     </item>
