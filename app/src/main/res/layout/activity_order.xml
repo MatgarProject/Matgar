@@ -128,11 +128,12 @@
         android:layout_marginRight="10dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/button"
-
+        android:layout_gravity="bottom|end"
         android:drawableLeft="@mipmap/etegah"
         android:text="ارسل"
         android:textColor="#ffffff"
-        android:textSize="25sp" />
+        android:textSize="25sp"
+/>
 
 
 </LinearLayout>

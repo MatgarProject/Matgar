@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "932700218078",
+    "project_id": "firebase-matgar"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:932700218078:android:6fdb80a8d8046bf6",
+        "android_client_info": {
+          "package_name": "com.example.elashry.matgar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "932700218078-b7k9el34il25f987c8bfa94bgjb5rcpp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.elashry.matgar",
+            "certificate_hash": "c314860b8cb1f92ca8aad7d1de595d7b86a1bb3f"
+          }
+        },
+        {
+          "client_id": "932700218078-cath2to2eaav1lqkb9ohvnnhemvc1qb5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAmm0Dpvsaz9x3orbgXzqsfa1Z84UwX6g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

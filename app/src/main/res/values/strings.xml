@@ -82,5 +82,15 @@
         <item>Women</item>
     </string-array>
 
+    <string name="facebook_app_id">470404933331382</string>
+
+    <string name="btn_logout_from_google">Logout from Google</string>
+    <string name="btn_revoke_access">Revoke Access</string>
+
+    <string name="action_logout">Logout</string>
+    <string name="action_disconnect">Disconnect</string>
+
+    <string name="action_settingss">LogOut</string>
+
 
 </resources>

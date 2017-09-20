@@ -129,7 +129,7 @@
 
 </LinearLayout>
 
-        <Button
+        <com.facebook.login.widget.LoginButton
             android:id="@+id/faceBtn"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -142,7 +142,7 @@
             android:textColor="@color/white"
             android:textSize="17sp"
             tools:ignore="RtlHardcoded" />
-        <Button
+        <com.google.android.gms.common.SignInButton
             android:drawableLeft="@drawable/go"
             android:id="@+id/gmailBtn"
             android:layout_width="fill_parent"
