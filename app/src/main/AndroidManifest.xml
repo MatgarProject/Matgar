@@ -20,6 +20,10 @@
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="70639a56b4f3a9310e4fe6c01434d9d88f2a36e0"
+            />
 
         <activity
             android:name=".Activities.Login"

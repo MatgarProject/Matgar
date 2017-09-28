@@ -49,6 +49,7 @@ import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.OptionalPendingResult;
 import com.google.android.gms.common.api.ResultCallback;
 
+
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -104,6 +105,8 @@ public class Login_Fragment extends Fragment implements OnClickListener {
     /////////////////////////////////////////////////////////////
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+
         //////////////////////////////////////////////////////////////
         FacebookSdk.sdkInitialize(getActivity().getApplicationContext());
         callbackManager = CallbackManager.Factory.create();
@@ -153,8 +156,6 @@ public class Login_Fragment extends Fragment implements OnClickListener {
 
 
     }
-//////////////////////////////////////////////////////////
-
 
     //////////////////////
 

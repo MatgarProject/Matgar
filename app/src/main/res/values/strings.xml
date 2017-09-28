@@ -93,4 +93,8 @@
     <string name="action_settingss">LogOut</string>
 
 
+    <string name="com.twitter.sdk.android.CONSUMER_KEY">4tN0JifZwPGkz39tOopCMtlA4</string>
+    <string name="com.twitter.sdk.android.CONSUMER_SECRET">	6VXhvxch3dBkYB0eDaab4IGLsOvkoDStJv05Bvux35Uxr133AW</string>
+
+
 </resources>
